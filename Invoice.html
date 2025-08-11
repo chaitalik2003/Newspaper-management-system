@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Generation</title>
+</head>
+<body>
+    <center>
+        <div class="container">
+            <h2>Invoice Generation</h2>
+            <form name="Invoice" action="Invoice.php" method="post">
+                <table>
+                    <tr>
+                        <td><label for="id">Invoice ID:</label></td>
+                        <td><input type="number" id="id" name="id" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="customer_id">Customer ID:</label></td>
+                        <td><input type="number" id="customer_id" name="customer_id" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="issue_date">Issue Date:</label></td>
+                        <td><input type="date" id="issue_date" name="issue_date" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="due_date">Due Date:</label></td>
+                        <td><input type="date" id="due_date" name="due_date" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="newspaper">Newspaper:</label></td>
+                        <td>
+                            <select id="newspaper" name="newspaper" required>
+                                <option value="The Times of India">The Times of India</option>
+                                <option value="The Hindu">The Hindu</option>
+                                <option value="The Indian Express">The Indian Express</option>
+                                <option value="Lokmat">Lokmat</option>
+                                <option value="Sakal">Sakal</option>
+                                <option value="PunyaNagari">PunyaNagari</option>
+                                <option value="Loksatta">Loksatta</option>
+                                <option value="DivyaBhaskar">DivyaBhaskar</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="amount">Amount:</label></td>
+                        <td><input type="number" step="0.01" id="amount" name="amount" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pending_amount">Pending Amount:</label></td>
+                        <td><input type="number" step="0.01" id="pending_amount" name="pending_amount" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <button type="submit">Generate Invoice</button>
+                            <button type="button" onclick="updateInvoice()">Update</button>
+                            <button type="button" onclick="deleteInvoice()">Delete</button>
+                            <button type="button" onclick="displayInvoices()">Display</button>
+                            <button type="button" onclick="searchInvoice()">Search</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </center>
+</body>
+</html>

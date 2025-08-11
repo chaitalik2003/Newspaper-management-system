@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Hawker Registration</title>
+</head>
+<body>
+    <center>
+        <div class="container">
+            <h2>Paper Hawker Registration</h2>
+            <form name="newspaperhawker_reg" action="newspaperhawker_reg.php" method="post">
+                <table>
+                    <tr>
+                        <td><label for="id">Hawker ID:</label></td>
+                        <td><input type="number" id="id" name="id" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="name">Name:</label></td>
+                        <td><input type="text" id="name" name="name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password:</label></td>
+                        <td><input type="password" id="password" name="password" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="contact">Contact:</label></td>
+                        <td><input type="text" id="contact" name="contact" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <button type="submit">Register</button>
+                            <button type="button" onclick="updatenewspaperhawker()">Update</button>
+                            <button type="button" onclick="deletenewspaperhawker()">Delete</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </center>
+</body>
+</html>

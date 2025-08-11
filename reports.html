@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Report</title>
+</head>
+<body>
+    <center>
+        <div class="container">
+            <h2>Generate Report</h2>
+            <form name="reports" action="reports.php" method="post">
+                <table>
+                    <tr>
+                        <td><label for="report_date">Report Date:</label></td>
+                        <td><input type="date" id="report_date" name="report_date" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="total_deliveries">Total Deliveries:</label></td>
+                        <td><input type="number" id="total_deliveries" name="total_deliveries" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="successful_deliveries">Successful Deliveries:</label></td>
+                        <td><input type="number" id="successful_deliveries" name="successful_deliveries" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="missed_deliveries">Missed Deliveries:</label></td>
+                        <td><input type="number" id="missed_deliveries" name="missed_deliveries" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="delays">Delays:</label></td>
+                        <td><input type="number" id="delays" name="delays" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <button type="submit">Submit</button>
+                            <button type="button" onclick="updatereports()">Update</button>
+                            <button type="button" onclick="deletereports()">Delete</button>
+                            <button type="button" onclick="displayreports()">Display</button>
+                            <button type="button" onclick="searchreports()">Search</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </center>
+</body>
+</html>

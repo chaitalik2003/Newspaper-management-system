@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Registration</title>
+</head>
+<body>
+    <center>
+        <div class="container">
+            <h2>Delivery Registration</h2>
+            <form name="deliveries" action="deliveries.php" method="post">
+                <table>
+                    <tr>
+                        <td><label for="id">Delivery ID:</label></td>
+                        <td><input type="number" id="id" name="id" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="customer_id">Customer ID:</label></td>
+                        <td><input type="number" id="customer_id" name="customer_id" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="hawker_id">Hawker ID:</label></td>
+                        <td><input type="number" id="hawker_id" name="hawker_id" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="date">Delivery Date:</label></td>
+                        <td><input type="date" id="date" name="date" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="status">Status:</label></td>
+                        <td>
+                            <select id="status" name="status" required>
+                                <option value="completed">Completed</option>
+                                <option value="pending">Pending</option>
+                                <option value="delayed">Delayed</option>
+                                <option value="canceled">Canceled</option>
+                                <option value="in_transit">In Transit</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" value="Submit" name="sbm">
+                            <button type="button" onclick="updatedeliveries()">Update</button>
+                            <button type="button" onclick="deletedeliveries()">Delete</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </center>
+</body>
+</html>

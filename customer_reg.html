@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Registration</title>
+</head>
+<body>
+    <center>
+        <div class="container">
+            <h2>Customer Registration</h2>
+            <form name="customer_reg" action="customer_reg.php" method="post">
+                <table>
+                    <tr>
+                        <td><label for="id">Customer ID:</label></td>
+                        <td><input type="number" id="id" name="id" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="name">Name:</label></td>
+                        <td><input type="text" id="name" name="name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password:</label></td>
+                        <td><input type="password" id="password" name="password" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="contact">Contact:</label></td>
+                        <td><input type="text" id="contact" name="contact" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="address">Address:</label></td>
+                        <td><input type="text" id="address" name="address" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="subscription_start">Subscription Start Date:</label></td>
+                        <td><input type="date" id="subscription_start" name="subscription_start" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="subscription_end">Subscription End Date:</label></td>
+                        <td><input type="date" id="subscription_end" name="subscription_end" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="newspaper">Select Newspaper:</label></td>
+                        <td>
+                            <select id="newspaper" name="newspaper" required>
+                                <option value="newspaper1">Lokmat</option>
+                                <option value="newspaper2">Divya Marathi</option>
+                                <option value="newspaper3">Sakal</option>
+                                <option value="newspaper4">PunyaNagari</option>
+                                <option value="newspaper5">Loksatta</option>
+                                <option value="newspaper6">Indian Express</option>
+                                <option value="newspaper7">Maharashtra Times</option>
+                                <option value="newspaper8">Deshdut</option>
+                                <option value="newspaper9">Aapla Maharashtra</option>
+                                <option value="newspaper10">Mumbai Chaufer</option>
+                                <option value="newspaper11">Divya Bhaskar</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" value="Submit" name="sbm">
+                            <button type="button" onclick="updateadmin()">Update</button>
+                            <button type="button" onclick="deleteadmin()">Delete</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </center>
+</body>
+</html>
